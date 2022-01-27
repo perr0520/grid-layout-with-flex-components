@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+    font-weight: bold;
   }
   
   .emoji {
@@ -25,6 +26,10 @@ body {
   
   .icon {
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    order: -1;
+    margin: 15px;
   }
 
   .emojis {
@@ -35,21 +40,36 @@ body {
       row-gap: 15px;
       column-gap: 15px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      align-content: center;
   }
 
   .emoji:nth-child(1) {
       grid-area: one;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
   }
 
   .emoji:nth-child(2) {
     grid-area: two;
+    display: flex;
+    flex-direction: column;
   }
 
   .emoji:nth-child(3) {
     grid-area: three;
+    display: flex;
+    flex-direction: column;
   }
 
   .emoji:nth-child(4) {
     grid-area: four;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h2 {
+      display: flex;
+      justify-content: center;
+      order: 0;
   }
